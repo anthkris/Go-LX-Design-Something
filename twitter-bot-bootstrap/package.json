@@ -1,0 +1,30 @@
+{
+  "name": "go-lx-design-something-bot",
+  "version": "1.0.0",
+  "description": "twitter bot bootstrap",
+  "main": "index.js",
+  "devDependencies": {
+    "standard": "*"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "K. Anthony",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "twit": "^2.2.5",
+    "unique-random-array": "^1.0.0",
+    "unirest": "^0.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://anthkris.github.io/GoLXDesignSomething/"
+  },
+  "keywords": [
+    "twitter",
+    "bot",
+    "instructional",
+    "design"
+  ]
+}
