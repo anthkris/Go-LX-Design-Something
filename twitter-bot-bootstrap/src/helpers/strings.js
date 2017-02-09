@@ -1,6 +1,7 @@
 module.exports = {
   queryString: [
-    'seriousgame'
+    'seriousgame',
+    'seriousgames'
   ],
   queryStringSubQuery: [
     ''
