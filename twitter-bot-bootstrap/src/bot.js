@@ -201,17 +201,17 @@ var mentionStream = Twitter.stream('statuses/filter', { track: '@GoLXDesign'});
   
   function tweetIdea (tweet) {
     console.log(tweet)
-    //console.log('listening to tweets');
-
+    //console.log('listenigitng to tweets');
+    var responseTweet = ranDom(is)
+    var nameID = tweet.id_str
+    var name = tweet.user.screen_name
     if (tweet.text.indexOf('@GoLXDesign') > -1 && tweet.user.screen_name !== 'GoLXDesign' &&
     (
       tweet.text.indexOf('make') > -1 || tweet.text.indexOf('create') > -1 || tweet.text.indexOf('idea') > -1 || 
       tweet.text.indexOf('portfolio') > -1 || tweet.text.indexOf('project') > -1
       )) {
       console.log("there is a tweet")
-      var responseTweet = ranDom(is)
-      var nameID = tweet.id_str
-      var name = tweet.user.screen_name
+      
       Twitter.post('statuses/update', {in_reply_to_status_id: nameID, status:' @' + name + responseTweet}, function(err, data, response) {
         console.log(responseTweet)
       })
