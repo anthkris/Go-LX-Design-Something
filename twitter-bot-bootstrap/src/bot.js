@@ -215,6 +215,10 @@ var mentionStream = Twitter.stream('statuses/filter', { track: '@GoLXDesign'});
       Twitter.post('statuses/update', {in_reply_to_status_id: nameID, status:' @' + name + responseTweet}, function(err, data, response) {
         console.log(responseTweet)
       })
+    } else if (tweet.text.indexOf('@GoLXDesign') > -1) {
+      Twitter.post('statuses/update', {in_reply_to_status_id: nameID, status:' @' + name + ' If you want a project idea, use phrases like "What should I make?"'}, function(err, data, response) {
+        console.log(responseTweet)
+      })
     }
   }
 
