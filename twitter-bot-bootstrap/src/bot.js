@@ -178,7 +178,7 @@ function tweetNow (tweetTxt) {
     status: tweetTxt
   }
 
-    // HARCODE user name in and check before RT
+    // HARCODE username and check before RT
   var n = tweetTxt.search(/@GoLXDesign/i)
 
   if (n !== -1) {
@@ -203,7 +203,11 @@ var mentionStream = Twitter.stream('statuses/filter', { track: '@GoLXDesign'});
     console.log(tweet)
     //console.log('listening to tweets');
 
-    if (tweet.text.indexOf('@GoLXDesign') > -1) {
+    if (tweet.text.indexOf('@GoLXDesign') > -1 && tweet.user.screen_name !== 'GoLXDesign' &&
+    (
+      tweet.text.indexOf('make') > -1 || tweet.text.indexOf('create') > -1 || tweet.text.indexOf('idea') > -1 || 
+      tweet.text.indexOf('portfolio') > -1 || tweet.text.indexOf('project') > -1
+      )) {
       console.log("there is a tweet")
       var responseTweet = ranDom(is)
       var nameID = tweet.id_str

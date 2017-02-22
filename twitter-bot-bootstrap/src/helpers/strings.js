@@ -18,7 +18,10 @@ module.exports = {
     'nigga',
     'bitch',
     'hoe',
-    'cuck'
+    'cuck',
+    'music',
+    'basketball',
+    'sports'
   ],
   resultType: [
     'mixed',
@@ -26,9 +29,9 @@ module.exports = {
     'popular'
   ],
   responseString: [
-    'Hi @screenName thanks for the follow! If you need a project idea, tweet at me! !CR',
-    '@screenName thanks for following! Tweet at me for a #instructionaldesign project idea. !CR',
-    'Awesome @screenName, thanks for following! Tweet at me for a #instructionaldesign project idea. !CR'
+    'Hi @screenName thanks for the follow! If you need a project idea, tweet at me!',
+    '@screenName thanks for following! Tweet at me for a #instructionaldesign project idea.',
+    'Awesome @screenName, thanks for following! Tweet at me for a #instructionaldesign project idea.'
   ],
   ideaString: [
     ' Here\'s an idea:\nTry making a game that teaches players how to insult a person in Shakesperian English.',
@@ -58,5 +61,6 @@ module.exports = {
     ' How\'s this:\nCreate a video on connecting services using Zapier.',
     ' Try this one on for size:\nCreate a course on digital minimalism for incoming freshman college students.',
     ' Here ya go:\nDevelop an interactive map of a fictional journey. Think LOTR or Narnia.',
+    ' Here\'s and idea:\nDevelop a mobile interaction to help people practice their handwriting on tablet/phone surfaces.',
   ],
 }
